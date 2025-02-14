@@ -8,7 +8,7 @@ from sklearn.metrics import mean_squared_error, r2_score
 st.title('Modelo de Regressão Linear')
 st.markdown("Este é um Data App para prever notas com base em variáveis selecionadas e classificar como alta ou baixa.")
 
-dataset_path = 'StudentsPerformance_with_headers(1).csv'
+dataset_path = 'StudentsPerformance_with_headers (1).csv'
 data = pd.read_csv(dataset_path)
 
 st.write("### Visualização do Dataset:")
