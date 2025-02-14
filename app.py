@@ -21,7 +21,7 @@ x_columns = ['Student Age', 'Weekly study hours', 'Attendance to classes', 'Moth
 y_column = 'GRADE'
 
 X = data[x_columns]
-y = data[y_column].values.ravel()
+y = data[y_column]
 
 # Dividir dados em treino e teste
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
