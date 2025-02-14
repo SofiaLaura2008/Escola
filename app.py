@@ -17,7 +17,7 @@ st.write("### Visualização do Dataset:")
 st.write(data.head())
 
 # Definir colunas de entrada e saída
-x_columns = ['Student Age', 'Weekly study hours', 'Attendance to classes', 'Mother’s education', 'Father’s education']
+x_columns = ['Student Age', 'Weekly study hours', 'Attendance to classes', 'Mother’s education', 'Father’s education ']
 y_column = 'GRADE'
 X = data[x_columns]
 y = data[y_column]
