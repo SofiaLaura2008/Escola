@@ -62,11 +62,13 @@ if st.sidebar.button("Realizar Predição"):
     # Exibir resultados
     st.write("### Classificação de Notas Testadas:")
     predictions = ["Alta" if pred >= threshold else "Baixa" for pred in y_pred]
+    # Converter y_test para um array NumPy antes de usar flatten
     results = pd.DataFrame({
-        "Nota Real": y_test.flatten(),
-        "Nota Prevista": y_pred.flatten(),
+        "Nota Real": y_test.values,  # Acessa os valores diretamente
+        "Nota Prevista": y_pred.flatten(),  # y_pred já é um array NumPy
         "Classificação": predictions
     })
+
     st.write(results)
 
     st.subheader("Distribuição das Notas Previstas")
