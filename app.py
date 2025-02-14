@@ -15,10 +15,11 @@ st.write("### Visualização do Dataset:")
 st.write(data.head())
 
 x_columns = ['Student Age', 'Weekly study hours', 'Attendance to classes', 'Mother’s education', 'Father’s education ']  
-y_column = data['GRADE']
+y_column = ['GRADE']
 
 X = data[x_columns]
 y = data[y_column]
+
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
